@@ -72,114 +72,107 @@
         android:layout_alignRight="@id/textView2"
         android:ems="5"
         android:layout_marginRight="19dp"
-        android:inputType="number"
-        android:text="TextView" />
+        android:inputType="number" />
     <!-- height -->
-    <EditText
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="253dp"
-        android:layout_marginTop="224dp"
-        android:text="TextView" />
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="189dp"
-        android:text="@string/height" />
-    <EditText
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="197dp"
-        android:layout_marginTop="153dp"
-        android:text="TextView" />
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView4"
+        android:layout_marginLeft="@dimen/lable_left_margin"
+        android:layout_marginTop="25dp"
+        android:text="@string/height"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
 
     <EditText
-        android:id="@+id/textView10"
+        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="269dp"
-        android:layout_marginTop="341dp"
-        android:text="TextView" />
+        android:layout_alignBottom="@id/textView14"
+        android:layout_alignRight="@id/textView2"
+        android:ems="5"
+        android:layout_marginRight="19dp" />
 
-
-
-
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="321dp"
-        android:text="@string/doors" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="343dp"
-        android:text="@string/windows" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="475dp"
-        android:text="@string/gallons" />
+<!-- sub title two -->
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="78dp"
-        android:layout_marginTop="274dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:text="@string/enter_door_window" />
 
+    <!-- Number of doors -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/textView12"
+        android:layout_marginLeft="@dimen/lable_left_margin"
+        android:layout_marginTop="25dp"
+        android:text="@string/doors"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+    <EditText
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView3"
+        android:layout_alignRight="@id/textView2"
+        android:ems="5"
+        android:layout_marginRight="19dp"/>
+    <!--number of windows -->
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginLeft="@dimen/lable_left_margin"
+        android:layout_marginTop="25dp"
+        android:text="@string/windows"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+    <EditText
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView11"
+        android:layout_alignRight="@id/textView2"
+        android:ems="5"
+        android:layout_marginRight="19dp" />
 
-
-
-
-
-
+    <!--TODO Add on clicks to the buttons -->
+<!-- Buttons -->
     <Button
         android:id="@+id/button"
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView11"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="53dp"
+        android:layout_alignLeft="@id/textView11"
+        android:layout_marginTop="17dp"
         android:text="@string/compute_btn" />
 
     <Button
         android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView11"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="224dp"
-        android:layout_marginTop="66dp"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignRight="@id/textView12"
         android:text="@string/help_btn" />
+
+    <!-- bottom text -->
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/gallons" />
+
 </RelativeLayout>
