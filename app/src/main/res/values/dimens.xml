@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- default screen margins -->
+
+    <dimen name="activity_horizontal_margin"> 16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="lable_left_margin">50dp</dimen>
+    
+
+</resources>
